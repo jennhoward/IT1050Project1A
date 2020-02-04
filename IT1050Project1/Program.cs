@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IT10590Project1
+namespace IT1050Project1A
 {
     class Program
     {
@@ -35,19 +35,13 @@ namespace IT10590Project1
             Console.Write("Can You Vote? ");
             bool canVote = Console.ReadLine().ToUpper().StartsWith("Y");
 
-            //writeline fullName, assumes string, prints fine
             Console.WriteLine(fullName);
+            //writeline fullName, assumes string, prints fine
 
-            //return Console.Writeline(fullHeightCM);
-            //writeline double fullHeight to console, need to convert double to string
-            //return Console.Writeline(canVote);
-
-
-            //writeline bool canVote to console, need to convert bool to string
-            //return public static void Console.WriteLine(bool canVote);
-            //"raining.ToString() returns {0}",
-            //Console.WriteLine("raining.ToString() returns {0}", raining);
-            //return public static void Console.WriteLine(bool canVote);
+            Console.WriteLine("Total Height in cm is: " + totalHeightCM);
+            Console.WriteLine("Voter Status is: " + canVote);
+            //When one of the + operands is a string the other
+            //the other is implicitly converted into a string
 
             //Console.WriteLine("Hit any key for the progam to end!");
             //Console.ReadKey();

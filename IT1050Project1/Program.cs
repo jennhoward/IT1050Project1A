@@ -30,19 +30,18 @@ namespace IT1050Project1A
 
             Console.Write("How old are you? ");
             int age = int.Parse(Console.ReadLine());
-            Console.Write("Are you a citizen? ");
-            bool isCitizen = Console.ReadLine().ToUpper().StartsWith("Y");
+            Console.Write("Are you a citizen? true or false ");
+            bool isCitizen = bool.Parse(Console.ReadLine());
             Console.Write("Can You Vote? ");
-            bool canVote = Console.ReadLine().ToUpper().StartsWith("Y");
+            bool canVote = (age >= 18) && isCitizen;
 
             Console.WriteLine(fullName);
             //writeline fullName, assumes string, prints fine
-
-            Console.WriteLine("Total Height in cm is: " + totalHeightCM);
-            Console.WriteLine("Voter Status is: " + canVote);
+            Console.WriteLine("Your Total Height in cm is: " + totalHeightCM);
+            Console.WriteLine("Your oter Status is: " + canVote);
             //When one of the + operands is a string the other
             //the other is implicitly converted into a string
-
+            Console.ReadKey();
             //Console.WriteLine("Hit any key for the progam to end!");
             //Console.ReadKey();
         }
